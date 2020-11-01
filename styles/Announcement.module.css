@@ -1,0 +1,102 @@
+.announcementWrapper {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.announcementSubWrapper {
+  height: auto;
+  padding-bottom: 2rem;
+  background: var(--secondary-color);
+}
+
+.announcementForm {
+  width: 30%;
+  margin: 1rem auto;
+}
+
+.announcementForm__divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.announcementForm__para {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 175.78%;
+  text-align: justify;
+  color: var(--text-dark);
+}
+
+.announcementForm__checkbox {
+  margin-top: -15px;
+}
+
+.announcementForm__submit {
+  width: 100%;
+  margin: 2rem auto;
+  background: var(--btn-color);
+  border: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+  outline: none;
+}
+
+/* back btn */
+.back__redirect {
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
+  margin: left;
+  margin-bottom: 3rem;
+}
+
+.backButton {
+  font-size: 1.5rem;
+}
+
+.back__redirect {
+  font-style: normal;
+  font-weight: normal;
+  color: var(--text-dark);
+}
+
+.back__redirect span {
+  color: var(--primary-color-light);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .announcementSubWrapper {
+    height: 100vh;
+  }
+
+  .announcementForm {
+    width: 50%;
+    margin: 1rem auto;
+    margin-top: 30vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .announcementSubWrapper {
+    height: auto;
+  }
+
+  .announcementForm {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .back__redirect {
+    width: 25%;
+  }
+}

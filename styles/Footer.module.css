@@ -1,0 +1,132 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 1rem 0;
+}
+
+.footer {
+  background: #212121;
+  color: #fff;
+  height: auto;
+  width: 100vw;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem !important;
+  flex: 1;
+  margin-top: 3rem;
+}
+
+.footer__socials__content {
+  font-size: 0.8rem !important;
+  padding: 0 1.5rem;
+  margin: 1rem;
+}
+
+.icons {
+  margin: 0.5rem;
+  color: #fff !important;
+}
+
+.footer__socials_icons {
+  display: flex;
+  margin: 0 0.3rem;
+}
+
+.footer__quicklinks,
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.quicklinks,
+.contact {
+  margin: 2rem 0 2rem 0;
+}
+
+.list__linkText {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 0.8rem !important;
+}
+
+.contact__listItem {
+  font-size: 0.8rem !important;
+  margin-top: 1.2rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.terms__listLink,
+.privacy {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.footer__notes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+  background: #000;
+  color: #fff;
+  width: 100vw;
+}
+
+.privacy_space {
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer__socials-content {
+    padding: 0 1.5rem;
+    margin: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .contact,
+  .quicklinks {
+    margin: 1rem 0 0.6rem 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact__listItem,
+  .footer__socials-content,
+  .contact,
+  .quicklinks,
+  .list__link,
+  .terms__listLink,
+  .privacy {
+    font-size: 0.8rem !important;
+  }
+
+  .privacy {
+    padding-left: 1rem;
+  }
+
+  .footer__notes {
+    flex-direction: column;
+  }
+
+  .terms {
+    margin-top: 0.5rem;
+    padding: 0 !important;
+  }
+}

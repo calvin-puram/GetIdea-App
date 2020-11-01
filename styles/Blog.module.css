@@ -1,0 +1,159 @@
+.blogHeader,
+.blogWrapper {
+  height: auto;
+  margin: 10rem 0 6rem 0;
+}
+
+.blogHeader__Header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 128.34%;
+  color: var(--primary-color);
+}
+
+.blogHeader__para {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-dark);
+}
+
+.blogContent {
+  height: auto;
+  width: 60%;
+  margin: 5rem auto 2rem auto;
+}
+
+.blogContent__sub p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--text-dark);
+}
+
+.blogContent__subHeader {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 158.34%;
+  color: var(--primary-color);
+}
+
+.blogContent__img {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* blog list */
+.blogWrapper {
+  margin: 3rem 0;
+}
+
+.blogList {
+  height: auto;
+  width: 40%;
+}
+
+.blogCard {
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.blogCard img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blogCard__content {
+  background: url('../public/img/bloglist.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 1rem;
+  margin: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.blogCard__contentHeader {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.blogCard__contentPara {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.blogCard__contentIntro {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.rateIdeasBtn {
+  background: var(--btn-color) !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.rateModalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogContent__img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .blogList {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blogHeader__seperator2 {
+    display: none;
+  }
+
+  .blogContent {
+    width: 90%;
+    margin: 3rem auto 2rem auto;
+  }
+
+  .blogHeader__Header {
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 108.34%;
+    text-align: center;
+  }
+
+  .blogHeader__para {
+    text-align: center;
+  }
+
+  .blogList {
+    width: 90%;
+  }
+
+  .blogCard__contentHeader {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,305 @@
+.loginWrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loginSeparator1 {
+  background: #fff7df;
+  height: 100vh;
+  flex: 1;
+}
+
+.loginSeparator2,
+.contributeSeparator2 {
+  flex: 1;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('../public/img/login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contributeSeparator2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('../public/img/contribute.jpg');
+  background-position: center 30%;
+}
+
+.loginSeparator1Img,
+.contriSeparator1Img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contriSeparator1Img {
+  display: none;
+}
+
+.logo__section {
+  display: flex;
+  align-items: center;
+}
+
+.logo__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--primary-color-light);
+}
+
+.loginPara,
+.termsPara,
+.contributionHeader {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+.termsPara {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contributionHeader {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.loginFormSubWrapper,
+.contributeFormSubWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm__seperator,
+.contributeForm__checkbox {
+  margin-top: 1rem;
+}
+
+.loginForm__input {
+  width: 26.4375rem;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 100px;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+  outline-color: var(--primary-color);
+}
+
+.loginForm__submit,
+.contributorForm__submit {
+  width: 26.4375rem;
+  background: var(--btn-color);
+  border: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+}
+
+.loginForm__submit:focus,
+.contributorForm__submit:focus {
+  outline-color: var(--primary-color);
+}
+
+.loginForm__authRedirect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registerForm__authRedirect {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginForm__redirect,
+.RegisterForm__redirect,
+.back__redirect {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--text-dark);
+}
+
+.loginForm__redirect span,
+.RegisterForm__redirect span,
+.back__redirect span {
+  color: var(--primary-color-light);
+  font-weight: bold;
+}
+
+.back__redirect {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  width: 15%;
+  float: right;
+}
+
+.backButton {
+  font-size: 1rem;
+}
+
+/* login side */
+.loginSideWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginSidePara {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+/* contribute */
+.contributeForm {
+  width: 90%;
+  margin: auto;
+}
+
+.contributorForm__submit {
+  margin: 1rem auto;
+  display: inline-block;
+  width: 35%;
+  text-align: center;
+}
+
+.contributeFormSubWrapper {
+  height: 80%;
+}
+
+.validateErrors {
+  color: red;
+  margin-left: 1rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .loginSeparator2,
+  .contributeSeparator2 {
+    display: none;
+  }
+
+  .loginSeparator1Img {
+    margin-top: 5px;
+  }
+
+  .loginFormSubWrapper,
+  .contributeFormSubWrapper {
+    height: 80%;
+  }
+
+  .contriSeparator1Img {
+    margin-top: 0.5rem;
+    display: block;
+  }
+
+  .contributeFormSubWrapper {
+    height: 60%;
+  }
+
+  .contributeForm {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contributionHeader {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .loginForm__input {
+    width: 90%;
+    margin: auto;
+    display: inline-block;
+  }
+
+  .loginForm__submit {
+    width: 90%;
+    margin: auto;
+  }
+
+  .back__redirect {
+    font-size: 14px;
+    width: 25%;
+  }
+
+  .backButton {
+    font-size: 16px;
+  }
+
+  .contributeFormSubWrapper {
+    height: auto;
+  }
+
+  .contriSeparator1Img {
+    display: none;
+  }
+
+  .contributionHeader {
+    margin-top: 3rem;
+    font-size: 16px;
+  }
+
+  .contributorForm__submit {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .loginForm__seperator,
+  .contributeForm__checkbox,
+  .contributorForm {
+    width: 90%;
+    margin: auto;
+  }
+
+  .loginForm__input {
+    margin-top: 0.5rem;
+  }
+
+  .loginForm__submit {
+    margin-top: 0.5rem;
+  }
+}

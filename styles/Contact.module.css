@@ -1,0 +1,131 @@
+.contact {
+  margin: 10rem 0 4rem 0;
+}
+.contact__form {
+  height: auto;
+  margin: 2rem 0;
+}
+
+.contactForm__Wrapper {
+  margin: 1rem auto !important;
+  text-align: center;
+  width: 80%;
+}
+
+.contact__Header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 128.34%;
+  color: var(--primary-color);
+}
+
+.contact__mainPara {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-dark);
+}
+
+.contactFormHeader {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 158.34%;
+  color: var(--primary-color);
+}
+
+.contactFormPara {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-dark);
+}
+
+.contact__formInput {
+  background: #ffffff;
+  border: 1px solid #333;
+  border-radius: 100px;
+  height: 60px;
+  width: 436px;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.contact__formInput::placeholder,
+.contactMessage::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-dark);
+}
+
+.contactMessage {
+  background: #ffffff;
+  border: 1px solid #333;
+  border-radius: 30px;
+  width: 423px;
+  height: 250px;
+  padding: 2rem 0 0 2rem;
+  outline: none;
+}
+
+.contact__inputWrapper {
+  margin: 1rem 0;
+}
+
+.contact__formsubmit {
+  width: 423px;
+  height: 60px;
+  background: var(--btn-color);
+  color: #fff !important;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact__MainSeperator2 {
+    display: none;
+  }
+
+  .contact__MainSeperator1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__Header {
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 108.34%;
+  }
+
+  .contactFormHeader {
+    font-size: 30px;
+  }
+
+  .contact__formInput {
+    height: 50px;
+    width: 236px;
+  }
+
+  .contactMessage {
+    width: 236px;
+    height: 150px;
+    border-radius: 30px;
+  }
+
+  .contact__formsubmit {
+    width: 236px;
+    height: 50px;
+  }
+}

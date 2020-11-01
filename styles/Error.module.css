@@ -1,0 +1,17 @@
+.errorPageWrapper {
+  height: auto;
+  overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.errorPageSubWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.errorPageSubContent {
+  background: #fff;
+}
