@@ -1,0 +1,973 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The <Register /> Component Should render the confirm password field the user will see 1`] = `
+<DocumentFragment>
+  <section
+    class="loginWrapper"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="loginSeparator1 col"
+      >
+        <a
+          class="back__redirect nav-link"
+          href="/"
+        >
+          <svg
+            class="backButton"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+            />
+          </svg>
+           
+          <span>
+            Back
+          </span>
+        </a>
+        <div
+          style="max-width: 100%; width: 150px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 43.333333333333336%;"
+          >
+            <img
+              alt="login"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75 320w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+        <div
+          class="registerFormSubWrapper"
+        >
+          <div
+            class="logo__section"
+          >
+            <div
+              class="logo__title"
+            >
+              GetIdea
+            </div>
+            <div
+              style="max-width: 100%; width: 35px;"
+            >
+              <div
+                style="position: relative; padding-bottom: 108.57142857142857%;"
+              >
+                <img
+                  alt="logo"
+                  class="__lazy"
+                  data-src="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75"
+                  data-srcset="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75 320w"
+                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="loginPara"
+          >
+            Please create a new account here
+          </p>
+          <form
+            action="#"
+            class="loginForm"
+          >
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="loginForm__input"
+                id="name"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="email"
+              >
+                Email Address
+              </label>
+              <input
+                class="loginForm__input"
+                id="email"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password"
+                name="password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password2"
+              >
+                Confirm Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password2"
+                name="password2"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="registerForm__authRedirect"
+            >
+              <a
+                class="RegisterForm__redirect nav-link"
+                href="/login"
+              >
+                Already have an account? 
+                <span>
+                  Login
+                </span>
+                ?
+              </a>
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <button
+                class="loginForm__submit"
+                type="submit"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          style="max-width: 100%; width: 647px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 21.020092735703248%;"
+          >
+            <img
+              alt="login squares"
+              class="loginSeparator1Img __lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginranbows.png&w=320&q=75 320w, /_next/image?url=%2Fimg%2Floginranbows.png&w=420&q=75 420w, /_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75 768w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="loginSeparator2 col"
+      >
+        <div
+          class="loginSideWrapper"
+        >
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 90%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+          <p
+            class="loginSidePara"
+          >
+            Do you know you can also become a contributor and earn side cash? It’s easy! create an account to unlock a milestone.
+          </p>
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 50%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`The <Register /> Component Should render the email field the user will see 1`] = `
+<DocumentFragment>
+  <section
+    class="loginWrapper"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="loginSeparator1 col"
+      >
+        <a
+          class="back__redirect nav-link"
+          href="/"
+        >
+          <svg
+            class="backButton"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+            />
+          </svg>
+           
+          <span>
+            Back
+          </span>
+        </a>
+        <div
+          style="max-width: 100%; width: 150px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 43.333333333333336%;"
+          >
+            <img
+              alt="login"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75 320w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+        <div
+          class="registerFormSubWrapper"
+        >
+          <div
+            class="logo__section"
+          >
+            <div
+              class="logo__title"
+            >
+              GetIdea
+            </div>
+            <div
+              style="max-width: 100%; width: 35px;"
+            >
+              <div
+                style="position: relative; padding-bottom: 108.57142857142857%;"
+              >
+                <img
+                  alt="logo"
+                  class="__lazy"
+                  data-src="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75"
+                  data-srcset="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75 320w"
+                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="loginPara"
+          >
+            Please create a new account here
+          </p>
+          <form
+            action="#"
+            class="loginForm"
+          >
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="loginForm__input"
+                id="name"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="email"
+              >
+                Email Address
+              </label>
+              <input
+                class="loginForm__input"
+                id="email"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password"
+                name="password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password2"
+              >
+                Confirm Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password2"
+                name="password2"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="registerForm__authRedirect"
+            >
+              <a
+                class="RegisterForm__redirect nav-link"
+                href="/login"
+              >
+                Already have an account? 
+                <span>
+                  Login
+                </span>
+                ?
+              </a>
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <button
+                class="loginForm__submit"
+                type="submit"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          style="max-width: 100%; width: 647px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 21.020092735703248%;"
+          >
+            <img
+              alt="login squares"
+              class="loginSeparator1Img __lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginranbows.png&w=320&q=75 320w, /_next/image?url=%2Fimg%2Floginranbows.png&w=420&q=75 420w, /_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75 768w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="loginSeparator2 col"
+      >
+        <div
+          class="loginSideWrapper"
+        >
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 90%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+          <p
+            class="loginSidePara"
+          >
+            Do you know you can also become a contributor and earn side cash? It’s easy! create an account to unlock a milestone.
+          </p>
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 50%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`The <Register /> Component Should render the name field the user will see 1`] = `
+<DocumentFragment>
+  <section
+    class="loginWrapper"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="loginSeparator1 col"
+      >
+        <a
+          class="back__redirect nav-link"
+          href="/"
+        >
+          <svg
+            class="backButton"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+            />
+          </svg>
+           
+          <span>
+            Back
+          </span>
+        </a>
+        <div
+          style="max-width: 100%; width: 150px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 43.333333333333336%;"
+          >
+            <img
+              alt="login"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75 320w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+        <div
+          class="registerFormSubWrapper"
+        >
+          <div
+            class="logo__section"
+          >
+            <div
+              class="logo__title"
+            >
+              GetIdea
+            </div>
+            <div
+              style="max-width: 100%; width: 35px;"
+            >
+              <div
+                style="position: relative; padding-bottom: 108.57142857142857%;"
+              >
+                <img
+                  alt="logo"
+                  class="__lazy"
+                  data-src="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75"
+                  data-srcset="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75 320w"
+                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="loginPara"
+          >
+            Please create a new account here
+          </p>
+          <form
+            action="#"
+            class="loginForm"
+          >
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="loginForm__input"
+                id="name"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="email"
+              >
+                Email Address
+              </label>
+              <input
+                class="loginForm__input"
+                id="email"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password"
+                name="password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password2"
+              >
+                Confirm Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password2"
+                name="password2"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="registerForm__authRedirect"
+            >
+              <a
+                class="RegisterForm__redirect nav-link"
+                href="/login"
+              >
+                Already have an account? 
+                <span>
+                  Login
+                </span>
+                ?
+              </a>
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <button
+                class="loginForm__submit"
+                type="submit"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          style="max-width: 100%; width: 647px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 21.020092735703248%;"
+          >
+            <img
+              alt="login squares"
+              class="loginSeparator1Img __lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginranbows.png&w=320&q=75 320w, /_next/image?url=%2Fimg%2Floginranbows.png&w=420&q=75 420w, /_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75 768w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="loginSeparator2 col"
+      >
+        <div
+          class="loginSideWrapper"
+        >
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 90%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+          <p
+            class="loginSidePara"
+          >
+            Do you know you can also become a contributor and earn side cash? It’s easy! create an account to unlock a milestone.
+          </p>
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 50%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`The <Register /> Component Should render the password field the user will see 1`] = `
+<DocumentFragment>
+  <section
+    class="loginWrapper"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="loginSeparator1 col"
+      >
+        <a
+          class="back__redirect nav-link"
+          href="/"
+        >
+          <svg
+            class="backButton"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+            />
+          </svg>
+           
+          <span>
+            Back
+          </span>
+        </a>
+        <div
+          style="max-width: 100%; width: 150px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 43.333333333333336%;"
+          >
+            <img
+              alt="login"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginmatrix.png&w=320&q=75 320w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+        <div
+          class="registerFormSubWrapper"
+        >
+          <div
+            class="logo__section"
+          >
+            <div
+              class="logo__title"
+            >
+              GetIdea
+            </div>
+            <div
+              style="max-width: 100%; width: 35px;"
+            >
+              <div
+                style="position: relative; padding-bottom: 108.57142857142857%;"
+              >
+                <img
+                  alt="logo"
+                  class="__lazy"
+                  data-src="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75"
+                  data-srcset="/_next/image?url=%2Fimg%2Flogo.png&w=320&q=75 320w"
+                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="loginPara"
+          >
+            Please create a new account here
+          </p>
+          <form
+            action="#"
+            class="loginForm"
+          >
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="loginForm__input"
+                id="name"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="email"
+              >
+                Email Address
+              </label>
+              <input
+                class="loginForm__input"
+                id="email"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password"
+                name="password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <label
+                class="label"
+                for="password2"
+              >
+                Confirm Password
+              </label>
+              <input
+                class="loginForm__input"
+                id="password2"
+                name="password2"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="registerForm__authRedirect"
+            >
+              <a
+                class="RegisterForm__redirect nav-link"
+                href="/login"
+              >
+                Already have an account? 
+                <span>
+                  Login
+                </span>
+                ?
+              </a>
+            </div>
+            <div
+              class="loginForm__seperator"
+            >
+              <button
+                class="loginForm__submit"
+                type="submit"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          style="max-width: 100%; width: 647px;"
+        >
+          <div
+            style="position: relative; padding-bottom: 21.020092735703248%;"
+          >
+            <img
+              alt="login squares"
+              class="loginSeparator1Img __lazy"
+              data-src="/_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75"
+              data-srcset="/_next/image?url=%2Fimg%2Floginranbows.png&w=320&q=75 320w, /_next/image?url=%2Fimg%2Floginranbows.png&w=420&q=75 420w, /_next/image?url=%2Fimg%2Floginranbows.png&w=768&q=75 768w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="loginSeparator2 col"
+      >
+        <div
+          class="loginSideWrapper"
+        >
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 90%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+          <p
+            class="loginSidePara"
+          >
+            Do you know you can also become a contributor and earn side cash? It’s easy! create an account to unlock a milestone.
+          </p>
+          <div
+            style="max-width: 100%; width: 50px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 50%;"
+            >
+              <img
+                alt="login icon"
+                class="__lazy"
+                data-src="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75"
+                data-srcset="/_next/image?url=%2Fimg%2Floginsideicon2.png&w=320&q=75 320w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

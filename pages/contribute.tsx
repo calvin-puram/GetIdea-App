@@ -2,13 +2,19 @@ import { Nav, Container, Row, Col } from 'react-bootstrap';
 import styles from '@styles/Auth.module.css';
 import Link from 'next/link';
 import HomeBackButton from '@components/HomeBackButton';
+import Image from 'next/image';
 
 const login = () => {
   return (
     <section className={styles.loginWrapper}>
       <Row>
         <Col className={styles.loginSeparator1}>
-          <img src="/img/loginmatrix.png" alt="login" width="150px" />
+          <Image
+            src="/img/loginmatrix.png"
+            alt="login"
+            width="150px"
+            height="65px"
+          />
           <HomeBackButton />
           <div className={styles.contributeFormSubWrapper}>
             <p className={styles.contributionHeader}>
@@ -65,9 +71,11 @@ const login = () => {
             </form>
           </div>
 
-          <img
+          <Image
             src="/img/loginranbows.png"
             alt="login squares"
+            width="647px"
+            height="136px"
             className={styles.contriSeparator1Img}
           />
         </Col>

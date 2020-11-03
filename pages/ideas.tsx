@@ -8,6 +8,7 @@ import { FaSearch, FaGripHorizontal } from 'react-icons/fa';
 import { MdFormatListBulleted } from 'react-icons/md';
 import Rating from '@components/Rating';
 import IdeasGridPage from '@components/IdeasGridPage';
+import Image from 'next/image';
 
 const Ideas = () => {
   const [grid, setGrid] = useState(true);
@@ -30,10 +31,12 @@ const Ideas = () => {
               </Col>
               {/* second content */}
               <Col className="d-none d-md-flex ">
-                <img
+                <Image
                   src="/img/icon.png"
                   alt="icons"
-                  className={HomeStyles.hero__section__img}
+                  className={styles.hero__section__img}
+                  width="500px"
+                  height="550px"
                 />
               </Col>
             </div>
@@ -127,6 +130,7 @@ const Ideas = () => {
                             image="/img/business/photography.jpg"
                             title="Become A  Photographer"
                             access="Premium"
+                            ideasPage="true"
                           />
                         </a>
                       </Link>

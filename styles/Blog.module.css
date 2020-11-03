@@ -32,6 +32,8 @@
   font-size: 14px;
   line-height: 28px;
   color: var(--text-dark);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .blogContent__subHeader {
@@ -44,7 +46,7 @@
 
 .blogContent__img {
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* blog list */

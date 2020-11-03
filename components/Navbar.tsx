@@ -20,11 +20,11 @@ const NavbarItem = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <div className={styles.nav__items}>
-            <CustomLink href="/" >
+            <CustomLink href="/">
               <a className={styles.nav__itemsLinks}>Home</a>
             </CustomLink>
 
-            <CustomLink href="/ideas" >
+            <CustomLink href="/ideas">
               <a className={styles.nav__itemsLinks}>Ideas</a>
             </CustomLink>
 
@@ -32,11 +32,11 @@ const NavbarItem = () => {
               <a className={styles.nav__itemsLinks}>Blog</a>
             </CustomLink>
 
-            <CustomLink href="/about" >
+            <CustomLink href="/about">
               <a className={styles.nav__itemsLinks}>About</a>
             </CustomLink>
 
-            <CustomLink href="/contact" >
+            <CustomLink href="/contact">
               <a className={styles.nav__itemsLinks}>Contact </a>
             </CustomLink>
           </div>

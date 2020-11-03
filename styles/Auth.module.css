@@ -67,6 +67,17 @@
   margin-top: 1rem;
 }
 
+.label {
+  width: 70%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-dark);
+  margin: 0.5rem auto 0.3rem auto;
+  padding-left: 0.3rem;
+}
+
 .termsPara {
   font-weight: bold;
   font-size: 14px;
@@ -78,17 +89,25 @@
 }
 
 .loginFormSubWrapper,
-.contributeFormSubWrapper {
+.contributeFormSubWrapper,
+.registerFormSubWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60%;
+  height: 60vh;
 }
 
-.loginForm {
+.registerFormSubWrapper {
+  height: auto;
+}
+
+.loginForm,
+.forgetLoginForm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .loginForm__seperator,
@@ -96,11 +115,18 @@
   margin-top: 1rem;
 }
 
+.loginForm__seperator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .loginForm__input {
-  width: 26.4375rem;
+  width: 70%;
+  margin: auto;
   background: #ffffff;
   border: 1px solid #efefef;
-  border-radius: 100px;
+  border-radius: 8px;
   padding: 0.5rem 0.5rem;
   padding-left: 1rem;
   outline-color: var(--primary-color);
@@ -108,12 +134,13 @@
 
 .loginForm__submit,
 .contributorForm__submit {
-  width: 26.4375rem;
+  width: 70%;
+  margin: auto;
   background: var(--btn-color);
   border: none;
   color: #fff;
   text-align: center;
-  border-radius: 100px;
+  border-radius: 8px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -132,6 +159,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 70%;
+  margin: auto;
 }
 
 .registerForm__authRedirect {
@@ -147,6 +176,10 @@
   font-size: 12px;
   line-height: 14px;
   color: var(--text-dark);
+}
+
+.RegisterForm__redirect {
+  margin-right: 5rem;
 }
 
 .loginForm__redirect span,
@@ -205,12 +238,14 @@
 }
 
 .validateErrors {
+  width: 70%;
   color: red;
-  margin-left: 1rem;
+  margin: auto;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 16px;
+  padding-left: 0.3rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -249,6 +284,20 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .validateErrors {
+    width: 0;
+    margin: 0;
+    padding-left: 1.3rem;
+  }
+
+  .label {
+    margin: 0.5rem 0 0.3rem 1rem;
+  }
+
+  .loginForm__authRedirect {
+    width: 100%;
+    margin: auto;
+  }
   .loginForm__input {
     width: 90%;
     margin: auto;

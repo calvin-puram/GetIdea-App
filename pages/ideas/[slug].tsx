@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Layouts from '@components/Layouts';
 import styles from '@styles/Blog.module.css';
 import { Nav, Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import { FaRegStar } from 'react-icons/fa';
+import Image from 'next/image';
 
 const SingleIdea = () => {
   const [show, setShow] = useState(false);
@@ -12,7 +13,6 @@ const SingleIdea = () => {
   return (
     <Layouts title="Business Idea">
       <section className={styles.blogHeader}>
-      
         <Container>
           <Row>
             <Col lg="6" md="12" className={styles.blogHeader__seperator1}>
@@ -25,7 +25,7 @@ const SingleIdea = () => {
               {/*  modal */}
               <>
                 <Button className={styles.rateIdeasBtn} onClick={handleShow}>
-                 Rate this Idea
+                  Rate this Idea
                 </Button>
 
                 <Modal show={show} onHide={handleClose}>
@@ -42,10 +42,16 @@ const SingleIdea = () => {
                     </div>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button className={styles.rateIdeasBtn} onClick={handleClose}>
+                    <Button
+                      className={styles.rateIdeasBtn}
+                      onClick={handleClose}
+                    >
                       Close
                     </Button>
-                    <Button className={styles.rateIdeasBtn} onClick={handleClose}>
+                    <Button
+                      className={styles.rateIdeasBtn}
+                      onClick={handleClose}
+                    >
                       Save Changes
                     </Button>
                   </Modal.Footer>
@@ -73,10 +79,12 @@ const SingleIdea = () => {
             redefine travel.{' '}
           </p>
 
-          <img
+          <Image
             src="/img/business/realestate.jpg"
             alt="boutique shop"
             className={styles.blogContent__img}
+            width="738px"
+            height="350px"
           />
 
           <p>
@@ -178,11 +186,12 @@ const SingleIdea = () => {
           <h4 className={styles.blogContent__subHeader}>
             Real Estate Revenue Policies And Share Index
           </h4>
-
-          <img
+          <Image
             src="/img/business/boutique.jpeg"
             alt="boutique shop"
             className={styles.blogContent__img}
+            width="738px"
+            height="350px"
           />
 
           <p>

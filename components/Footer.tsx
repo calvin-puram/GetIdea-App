@@ -42,27 +42,27 @@ const Footer = () => {
           <ul>
             <li className={styles.quicklinks}>QuickLinks</li>
             <li>
-              <Link href="/" className={styles.list__link}>
+              <Link href="/">
                 <a className={styles.list__linkText}>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="/" className={styles.list__link}>
+              <Link href="/">
                 <a className={styles.list__linkText}>Ideas</a>
               </Link>
             </li>
             <li>
-              <Link href="/" className={styles.list__link}>
+              <Link href="/">
                 <a className={styles.list__linkText}>About</a>
               </Link>
             </li>
             <li>
-              <Link href="/" className={styles.list__link}>
+              <Link href="/">
                 <a className={styles.list__linkText}>Contact</a>
               </Link>
             </li>
             <li>
-              <Link href="/" className={styles.list__link}>
+              <Link href="/">
                 <a className={styles.list__linkText}>Become a Contributor</a>
               </Link>
             </li>
@@ -85,12 +85,12 @@ const Footer = () => {
         <div className={styles.terms}>
           <ul>
             <li>
-              <Link href="/" className={styles.terms__listLink}>
+              <Link href="/" >
                 <a className={styles.list__linkText}>Terms and Condition</a>
               </Link>
             </li>
             <li>
-              <Link href="/faq" className={styles.terms__listLink}>
+              <Link href="/faq" >
                 <a className={styles.list__linkText}>FAQ</a>
               </Link>
             </li>
@@ -104,7 +104,7 @@ const Footer = () => {
           <span> {new Date().getFullYear()}</span>
         </small>
         <small>
-          <Link href="/privacy" className={styles.privacy}>
+          <Link href="/privacy" >
             <a className={styles.list__linkText}>
               <span className={styles.privacy_space}>Privacy Policy</span>
             </a>

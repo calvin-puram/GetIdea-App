@@ -75,6 +75,9 @@
 
 .features__icons {
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .featuresHeader {

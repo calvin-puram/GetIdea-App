@@ -15,6 +15,7 @@ import {
 } from 'react-bootstrap';
 import Link from 'next/link';
 import { MdKeyboardBackspace } from 'react-icons/md';
+import Image from 'next/image';
 
 const favorite = () => {
   return (
@@ -46,7 +47,13 @@ const favorite = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <img src="/img/business/auto.jpg" alt="" width="100px" />
+                      <Image
+                        src="/img/business/auto.jpg"
+                        alt=""
+                        width="100px"
+                        height="66px"
+                      />
+
                       <small className={styles.tablePara}>
                         <Link href="/ideas/become-a-photographer">
                           <a>Photography and cinematography</a>
@@ -72,11 +79,13 @@ const favorite = () => {
                   </tr>
                   <tr>
                     <td>
-                      <img
+                      <Image
                         src="/img/business/boutique.jpeg"
                         alt=""
                         width="100px"
+                        height="66px"
                       />
+
                       <small className={styles.tablePara}>
                         <Link href="/ideas/setup-a-boutique-business">
                           <a>Embark On The Journey Of Becoming An Artist</a>
@@ -101,11 +110,13 @@ const favorite = () => {
                   </tr>
                   <tr>
                     <td>
-                      <img
+                      <Image
                         src="/img/business/photography.jpg"
                         alt=""
                         width="100px"
+                        height="66px"
                       />
+
                       <small className={styles.tablePara}>
                         <Link href="/ideas/become-an-auto-specialist">
                           <a>How To Have A Good Listening Ear For Music</a>

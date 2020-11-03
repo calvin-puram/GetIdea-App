@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '@styles/Home.module.css';
@@ -6,6 +7,7 @@ import GlobalBtn from '@components/GlobalBtn';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import { FaRegStar } from 'react-icons/fa';
 import Rating from '@components/Rating';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -29,10 +31,12 @@ export default function Home() {
               </Col>
               {/* second content */}
               <Col className="d-none d-md-flex ">
-                <img
+                <Image
                   src="/img/icon.png"
                   alt="icons"
                   className={styles.hero__section__img}
+                  width="500px"
+                  height="550px"
                 />
               </Col>
             </div>
@@ -45,21 +49,38 @@ export default function Home() {
           <Container>
             <Row>
               <Col className={styles.features__icons} sm="12" md="4">
-                <img src="/img/icon3.png" alt="web icon" />
+                <Image
+                  src="/img/icon3.png"
+                  alt="web icon"
+                  width="80px"
+                  height="93px"
+                />
                 <h3 className={styles.featuresHeader}>Unlimited Access</h3>
                 <p className={styles.featuresPara}>
                   Monthly subscription unlimited access
                 </p>
               </Col>
               <Col className={styles.features__icons} sm="12" md="4">
-                <img src="/img/icon2.png" alt="web icon" />
+                <Image
+                  src="/img/icon2.png"
+                  alt="web icon"
+                  width="80px"
+                  height="93px"
+                />
+
                 <h3 className={styles.featuresHeader}>Extensive Coverage</h3>
                 <p className={styles.featuresPara}>
                   Stay up to date with access to reference business Ideas
                 </p>
               </Col>
               <Col className={styles.features__icons} sm="12" md="4">
-                <img src="/img/icon1.png" alt="web icon" />
+                <Image
+                  src="/img/icon1.png"
+                  alt="web icon"
+                  width="80px"
+                  height="93px"
+                />
+
                 <h3 className={styles.featuresHeader}>Anytime, anywhere</h3>
                 <p className={styles.featuresPara}>
                   Switch between your computer, tablet, or mobile device.
@@ -73,9 +94,11 @@ export default function Home() {
           <Container>
             <Row>
               <Col md="6" sm="12">
-                <img
+                <Image
                   src="/img/idea.png"
                   alt="light bulb"
+                  width="450px"
+                  height="304px"
                   className={styles.features__img}
                 />
               </Col>
@@ -86,7 +109,7 @@ export default function Home() {
                   accessible on mobile and online for everyone. To us, it’s not
                   just work. We take pride in the solutions we deliver
                 </p>
-                <GlobalBtn tag="Discover" />
+                <GlobalBtn tag="Discover" link="ideas"/>
               </Col>
             </Row>
           </Container>
@@ -103,9 +126,11 @@ export default function Home() {
             <Row>
               <Col md="4" sm="12" className="my-sm-5">
                 <div className="d-none d-md-flex">
-                  <img
+                  <Image
                     src="/img/brake1.png"
                     alt="startup"
+                    width="290px"
+                    height="207px"
                     className={styles.brakeImg}
                   />
                 </div>
@@ -123,9 +148,11 @@ export default function Home() {
               </Col>
               <Col md="4" sm="12" className="my-sm-5">
                 <div className="d-none d-md-flex">
-                  <img
+                  <Image
                     src="/img/brake2.png"
                     alt="startup"
+                    width="290px"
+                    height="207px"
                     className={styles.brakeImg}
                   />
                 </div>
@@ -144,9 +171,11 @@ export default function Home() {
               </Col>
               <Col md="4" sm="12" className="my-sm-5">
                 <div className="d-none d-md-flex">
-                  <img
+                  <Image
                     src="/img/brake3.png"
                     alt="startup"
+                    width="290px"
+                    height="207px"
                     className={styles.brakeImg}
                   />
                 </div>
@@ -178,13 +207,11 @@ export default function Home() {
                 lg="3"
                 sm="12"
               >
-                
-                    <Rating
-                      image="/img/business/fish.jpg"
-                      title="Become A Fish Farmer"
-                      access="Free"
-                    />
-                  
+                <Rating
+                  image="/img/business/fish.jpg"
+                  title="Become A Fish Farmer"
+                  access="Free"
+                />
               </Col>
               <Col
                 md="4"
@@ -192,13 +219,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-               
-                    <Rating
-                      image="/img/business/photography.jpg"
-                      title="Become A  Photographer"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/photography.jpg"
+                  title="Become A  Photographer"
+                  access="Premium"
+                />
               </Col>
               <Col
                 md="4"
@@ -206,13 +231,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-                
-                    <Rating
-                      image="/img/business/auto.jpg"
-                      title="Become An Auto  Specialist"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/auto.jpg"
+                  title="Become An Auto Specialist"
+                  access="Premium"
+                />
               </Col>
               <Col
                 md="4"
@@ -220,13 +243,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-               
-                    <Rating
-                      image="/img/business/boutique.jpeg"
-                      title="Setup A Boutique Business"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/boutique.jpeg"
+                  title="Setup A Boutique Business"
+                  access="Premium"
+                />
               </Col>
 
               <Col
@@ -235,13 +256,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-                
-                    <Rating
-                      image="/img/business/auto.jpg"
-                      title="Become An Auto  Specialist"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/auto.jpg"
+                  title="Become An Auto  Specialist"
+                  access="Premium"
+                />
               </Col>
               <Col
                 md="4"
@@ -249,13 +268,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-                
-                    <Rating
-                      image="/img/business/boutique.jpeg"
-                      title="Setup A Boutique Business"
-                      access="Premium"
-                    />
-                 
+                <Rating
+                  image="/img/business/boutique.jpeg"
+                  title="Setup A Boutique Business"
+                  access="Premium"
+                />
               </Col>
               <Col
                 md="4"
@@ -263,13 +280,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-                
-                    <Rating
-                      image="/img/business/photography.jpg"
-                      title="Become A  Photographer"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/photography.jpg"
+                  title="Become A  Photographer"
+                  access="Premium"
+                />
               </Col>
               <Col
                 md="4"
@@ -277,13 +292,11 @@ export default function Home() {
                 sm="12"
                 className={styles.business__ideas__display}
               >
-                
-                    <Rating
-                      image="/img/business/photography.jpg"
-                      title="Become A  Photographer"
-                      access="Premium"
-                    />
-                  
+                <Rating
+                  image="/img/business/photography.jpg"
+                  title="Become A  Photographer"
+                  access="Premium"
+                />
               </Col>
             </Row>
           </Container>
@@ -292,11 +305,14 @@ export default function Home() {
         <section className={styles.pricing}>
           <div className={styles.pricing__contentWrapper}>
             <div>
-              <img
+              <Image
                 src="/img/curve.png"
-                alt="curve"
+                alt="background curve"
+                width="89px"
+                height="203px"
                 className={styles.pricing__img}
               />
+
               <div className={styles.pricing__content}>
                 <h3 className={styles.pricing__header}>Our Pricing Plans</h3>
                 <p className={styles.pricing__para}>
@@ -304,7 +320,7 @@ export default function Home() {
                   ideas and resources for everyone{' '}
                 </p>
                 <div>
-                  <GlobalBtn tag="Subscribe" />
+                  <GlobalBtn tag="Subscribe" link="subscribe"/>
                 </div>
               </div>
             </div>
@@ -325,30 +341,58 @@ export default function Home() {
                   </p>
                   <div className={styles.pricing__cardWrapper}>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
+
                       <p>Unlimited access</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>Offline Accessibility</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>24/7 Supports</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>Jobs Opportunity</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>2.0% Transaction Fee</p>
                     </div>
                   </div>
                   <div>
-                    <img
+                    <Image
                       src="/img/pricing_card_rect.png"
                       alt="pricing card"
+                      width="271px"
+                      height="66.5px"
                       className={styles.pricing__cardRect}
                     />
                   </div>
@@ -371,30 +415,57 @@ export default function Home() {
                   </p>
                   <div className={styles.pricing__cardWrapper}>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>Unlimited access</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>Offline Accessibility</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>24/7 Supports</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>Jobs Opportunity</p>
                     </div>
                     <div className={styles.pricing__cardItemsList}>
-                      <img src="/img/checkIcon.png" alt="check icon" />
+                      <Image
+                        src="/img/checkIcon.png"
+                        alt="check icon"
+                        width="12px"
+                        height="12px"
+                      />
                       <p>2.0% Transaction Fee</p>
                     </div>
                   </div>
                   <div>
-                    <img
+                    <Image
                       src="/img/pricing_card_rect.png"
                       alt="pricing card"
+                      width="271px"
+                      height="66.5px"
                       className={styles.pricing__cardRect}
                     />
                   </div>
@@ -408,9 +479,11 @@ export default function Home() {
           <Container className={styles.buildWrapper}>
             <div className={styles.buildSeperator1}>
               <div className={styles.build__img}>
-                <img
+                <Image
                   src="/img/buildpac.png"
-                  alt="rectangle"
+                  alt="idea placeholder"
+                  width="564px"
+                  height="409px"
                   className={styles.buildImgSecondary}
                 />
               </div>
@@ -425,7 +498,7 @@ export default function Home() {
                 accessible on mobile and online for everyone. To us, it’s not
                 just work. We take pride in the solutions we deliver
               </p>
-              <GlobalBtn tag="Let's Talk" />
+              <GlobalBtn tag="Let's Talk" link="contact"/>
             </div>
           </Container>
         </section>

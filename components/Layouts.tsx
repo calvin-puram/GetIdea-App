@@ -1,8 +1,14 @@
+import React, { FC } from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Layouts = ({ children, title  }) => {
+type LayoutProps = {
+  title: string;
+  children: JSX.Element | JSX.Element[];
+};
+
+const Layouts: FC<LayoutProps> = ({ children, title }) => {
   return (
     <div>
       <Head>

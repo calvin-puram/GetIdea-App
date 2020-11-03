@@ -2,11 +2,18 @@ import styles from '../styles/Blog.module.css';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import homeStyles from '@styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SingleBlogCard = ({ slug }) => {
   return (
     <div className={styles.blogCard}>
-      <img src="/img/business/money.jpg" alt="different currencies" />
+      <Image
+        src="/img/business/money.jpg"
+        alt="different currencies"
+        width="509"
+        height="339"
+      />
+
       <div className={styles.blogCard__content}>
         <Container>
           <h4 className={styles.blogCard__contentHeader}>

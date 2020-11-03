@@ -2,6 +2,7 @@ import { Nav, Container, Row, Col } from 'react-bootstrap';
 import styles from '@styles/Error.module.css';
 import Link from 'next/link';
 import Layouts from '@components/Layouts';
+import Image from 'next/image';
 
 const Custom404 = () => {
   return (
@@ -9,7 +10,12 @@ const Custom404 = () => {
       <section className={styles.errorPageWrapper}>
         <Container className={styles.errorPageSubWrapper}>
           <div className={styles.errorPageSubContent}>
-            <img src="/img/notfound.jpg" alt="404" />
+            <Image
+              src="/img/notfound.jpg"
+              alt="404"
+              width="625px"
+              height="500px"
+            />
           </div>
         </Container>
       </section>

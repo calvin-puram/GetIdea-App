@@ -1,6 +1,7 @@
 import Layouts from '@components/Layouts';
 import styles from '@styles/Blog.module.css';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
 
 const SingleBlog = () => {
   return (
@@ -31,11 +32,12 @@ const SingleBlog = () => {
             companies specialize in creating custom sailing vacations that
             redefine travel.{' '}
           </p>
-
-          <img
+          <Image
             src="/img/business/boutique.jpeg"
             alt="boutique shop"
             className={styles.blogContent__img}
+            width="738px"
+            height="415px"
           />
 
           <p>

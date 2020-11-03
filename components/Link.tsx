@@ -1,18 +1,23 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import React, { FC } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from '@styles/Navbar.module.css';
 
-const Links =  ({ href, children }) => {
-  const router = useRouter()
-  
-  let className = children.props.className || ''
+type LinkProps = {
+  href: string;
+  children: JSX.Element | JSX.Element[];
+};
+
+const Links: FC<LinkProps> = ({ href, children }) => {
+  const router = useRouter();
+  //@ts-ignore
+  let className = children.props.className || '';
   if (router.pathname === href) {
-    
-    className = `${className} selected`
-    
+    className = `${className} selected`;
   }
 
-  return <Link href={href}>{React.cloneElement(children, { className })}</Link>
-}
+  //@ts-ignore
+  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+};
 
-export default Links
+export default Links;
