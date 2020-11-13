@@ -22,7 +22,7 @@
 
 <img src="./public/img/getIdeaimg.png" alt="Logo" />
 
-GetIdea App was built out of neccessity to have a one stop web app that connects entrepreneurs with knowledge, support, programs, business ideas and investors they need to succeed.
+GetIdea App was built out of necessity to have a one stop web app that connects entrepreneurs with knowledge, support, programs, business ideas and investors they need to succeed.
 
 Here's why:
 
