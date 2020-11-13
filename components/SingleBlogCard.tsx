@@ -1,10 +1,15 @@
+import {FC} from 'react';
 import styles from '../styles/Blog.module.css';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import homeStyles from '@styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const SingleBlogCard = ({ slug }) => {
+type CardSingleProp = {
+  slug?:string
+}
+
+const SingleBlogCard:FC<CardSingleProp> = ({ slug }) => {
   return (
     <div className={styles.blogCard}>
       <Image
