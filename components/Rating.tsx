@@ -10,6 +10,7 @@ type RatingsProps = {
   title: string;
   image: string;
   access: string;
+  ideasPage?: string;
 };
 
 const Rating: FC<RatingsProps> = ({ image, title, access }) => {
@@ -19,7 +20,7 @@ const Rating: FC<RatingsProps> = ({ image, title, access }) => {
         <p className={styles.business__access}>{access}</p>
 
         <Image
-        data-testid="ratingImg"
+          data-testid="ratingImg"
           src={image}
           alt="fish"
           className={styles.businessImg}
@@ -30,7 +31,12 @@ const Rating: FC<RatingsProps> = ({ image, title, access }) => {
         <div className={styles.business__footerCard}>
           <div className={styles.business__footerCard__titleWrapper}>
             <Link href="/ideas/become-an-auto-specialist">
-              <a className={styles.business__footerCard__title} data-testid="title">{title}</a>
+              <a
+                className={styles.business__footerCard__title}
+                data-testid="title"
+              >
+                {title}
+              </a>
             </Link>
 
             <>

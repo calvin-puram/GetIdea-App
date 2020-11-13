@@ -8,7 +8,12 @@ import * as Yup from 'yup';
 import TextError from '@components/ValidationError';
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 
-const initialValues = {
+type SettingsProp = {
+  name: string;
+  email: string;
+  password: string;
+};
+const initialValues: SettingsProp = {
   name: '',
   email: '',
   password: '',
@@ -27,7 +32,7 @@ const validationSchema = Yup.object({
 });
 
 const settings = () => {
-  const onSubmit = (values) => console.log(values);
+  const onSubmit = (values: SettingsProp) => console.log(values);
   return (
     <Layouts title="User Settings">
       <section className={styles.settingsWrapper}>
@@ -83,7 +88,10 @@ const settings = () => {
                           placeholder="calvin puram"
                           className={styles.formInput__user}
                         />
-                        <ErrorMessage name="name" component={TextError} />
+                        {
+                          // @ts-ignore
+                          <ErrorMessage name="name" component={TextError} />
+                        }
                       </div>
                       <div className={styles.formInput__divider}>
                         <Field
@@ -92,7 +100,10 @@ const settings = () => {
                           placeholder="calvin.puram@gmail.com"
                           className={styles.formInput__user}
                         />
-                        <ErrorMessage name="email" component={TextError} />
+                        {
+                          // @ts-ignore
+                          <ErrorMessage name="email" component={TextError} />
+                        }
                       </div>
 
                       <button
@@ -124,7 +135,10 @@ const settings = () => {
                           placeholder="Current Password"
                           className={styles.formInput__user}
                         />
-                        <ErrorMessage name="password" component={TextError} />
+                        {
+                          // @ts-ignore
+                          <ErrorMessage name="password" component={TextError} />
+                        }
                       </div>
                       <div className={styles.formInput__divider}>
                         <Field
@@ -133,7 +147,10 @@ const settings = () => {
                           placeholder="New Password"
                           className={styles.formInput__user}
                         />
-                        <ErrorMessage name="password" component={TextError} />
+                        {
+                          // @ts-ignore
+                          <ErrorMessage name="password" component={TextError} />
+                        }
                       </div>
                       <div className={styles.formInput__divider}>
                         <Field
@@ -142,7 +159,10 @@ const settings = () => {
                           placeholder="Confirm Password"
                           className={styles.formInput__user}
                         />
-                        <ErrorMessage name="password" component={TextError} />
+                        {
+                          // @ts-ignore
+                          <ErrorMessage name="password" component={TextError} />
+                        }
                       </div>
 
                       <button

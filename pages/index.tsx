@@ -109,7 +109,7 @@ export default function Home() {
                   accessible on mobile and online for everyone. To us, it’s not
                   just work. We take pride in the solutions we deliver
                 </p>
-                <GlobalBtn tag="Discover" link="ideas"/>
+                <GlobalBtn tag="Discover" link="ideas" />
               </Col>
             </Row>
           </Container>
@@ -320,7 +320,7 @@ export default function Home() {
                   ideas and resources for everyone{' '}
                 </p>
                 <div>
-                  <GlobalBtn tag="Subscribe" link="subscribe"/>
+                  <GlobalBtn tag="Subscribe" link="subscribe" />
                 </div>
               </div>
             </div>
@@ -498,7 +498,7 @@ export default function Home() {
                 accessible on mobile and online for everyone. To us, it’s not
                 just work. We take pride in the solutions we deliver
               </p>
-              <GlobalBtn tag="Let's Talk" link="contact"/>
+              <GlobalBtn tag="Let's Talk" link="contact" />
             </div>
           </Container>
         </section>

@@ -43,11 +43,9 @@ const NavbarItem = () => {
 
           <div className={styles.nav__items__options}>
             <Menu />
-
             <div className="mr-1">
               <GlobalBtn tag="Be A Contributor" link="contribute" />
             </div>
-
             <GlobalBtn tag="Login" link="login" />
           </div>
         </Nav>

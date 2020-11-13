@@ -1,16 +1,23 @@
 import styles from '@styles/Favorite.module.css';
 import Layouts from '@components/Layouts';
 import HomeBackButton from '@components/HomeBackButton';
+
 import {
   Nav,
   Container,
   Row,
   Col,
+  // @ts-ignore
   thead,
+  // @ts-ignore
   tbody,
+  // @ts-ignore
   th,
+  // @ts-ignore
   tr,
+  // @ts-ignore
   Table,
+  // @ts-ignore
   td,
 } from 'react-bootstrap';
 import Link from 'next/link';
