@@ -48,7 +48,7 @@ const About = () => {
             </p>
 
             <div className={styles.about__featuresBtn}>
-              <GlobalBtn tag="Say Hello" Link="contact/>
+              <GlobalBtn tag="Say Hello" Link="contact" />
             </div>
           </Col>
         </Row>
