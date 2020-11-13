@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC } from 'react';
 import styles from '../styles/Blog.module.css';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import homeStyles from '@styles/Home.module.css';
@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 type CardSingleProp = {
-  slug?:string
-}
+  slug?: string;
+};
 
-const SingleBlogCard:FC<CardSingleProp> = ({ slug }) => {
+const SingleBlogCard: FC<CardSingleProp> = ({ slug }) => {
   return (
     <div className={styles.blogCard}>
       <Image
@@ -33,7 +33,7 @@ const SingleBlogCard:FC<CardSingleProp> = ({ slug }) => {
           </p>
 
           <div className={styles.aboutBuild__btn}>
-            <Link href={`/blog/${encodeURIComponent(slug)}`} passHref>
+            <Link href={`/blog/${slug}`} passHref>
               <Nav.Link className={homeStyles.nav__btn}>Read More</Nav.Link>
             </Link>
           </div>
