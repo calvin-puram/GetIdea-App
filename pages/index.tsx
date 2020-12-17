@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { Nav, Container, Row, Col } from 'react-bootstrap';
+import { FaRegStar } from 'react-icons/fa';
+import {useDispatch} from 'react-redux';
+import {getIdeas} from '../redux';
+
+
+import Rating from '@components/Rating';
+import Image from 'next/image';
 import styles from '@styles/Home.module.css';
 import Layouts from '@components/Layouts';
 import GlobalBtn from '@components/GlobalBtn';
-import { Nav, Container, Row, Col } from 'react-bootstrap';
-import { FaRegStar } from 'react-icons/fa';
-import Rating from '@components/Rating';
-import Image from 'next/image';
 
 export default function Home() {
+const dispatch = useDispatch();
+
+useEffect(() => {
+  dispatch(getIdeas())
+}, [dispatch]);
+
   return (
     <Layouts title="Home">
       <header className={styles.header}>

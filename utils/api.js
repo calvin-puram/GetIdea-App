@@ -1,8 +1,8 @@
-import axios from 'axios';
+import * as axios from 'axios';
 
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000/api/v1',
+  baseURL: 'https://getapp-backend.herokuapp.com/api/v1',
   headers: {
     'Content-Type': 'application/json'
   }

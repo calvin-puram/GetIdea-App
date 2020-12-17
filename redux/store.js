@@ -1,17 +1,18 @@
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { rootReducer } from './rootReducer';
 import { useMemo } from 'react'
+import { createStore, applyMiddleware } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import { rootReducer } from './rootReducer';
+import thunk from 'redux-thunk'
 
+
+let store
 const middleware = [thunk];
 
-let store;
-const initStore = (initialState) => {
-return createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(...middleware))
-);
+function initStore(initialState) {
+  return createStore(
+    rootReducer,
+    composeWithDevTools(applyMiddleware(...middleware))
+  )
 }
 
 export const initializeStore = (preloadedState) => {
@@ -40,5 +41,3 @@ export function useStore(initialState) {
   const store = useMemo(() => initializeStore(initialState), [initialState])
   return store
 }
-
-
