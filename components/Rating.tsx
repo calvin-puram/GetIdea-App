@@ -16,7 +16,7 @@ type RatingsProps = {
 const Rating: FC<RatingsProps> = ({ image, title, access }) => {
   return (
     <>
-      <div className="business__card">
+      {image && <div className="business__card">
         <p className={styles.business__access}>{access}</p>
 
         <Image
@@ -65,7 +65,7 @@ const Rating: FC<RatingsProps> = ({ image, title, access }) => {
             <FaRegStar />
           </div>
         </div>
-      </div>
+      </div>}
     </>
   );
 };

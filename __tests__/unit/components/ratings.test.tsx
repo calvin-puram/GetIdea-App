@@ -17,4 +17,10 @@ describe('The <Rating /> Component', () => {
     expect(getByText(ratingProps.access)).toBeInTheDocument();
   })
 
+  it('Should not render an idea tile if image  is not provided', () => {
+    ratingProps.image = '';
+    const {queryByText} =  render(<Rating {...ratingProps as any}/>)
+    expect(queryByText(ratingProps.access)).not.toBeInTheDocument();
+  })
+
 })
