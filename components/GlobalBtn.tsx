@@ -10,8 +10,8 @@ interface BtnProps {
 
 const GlobalBtn: FunctionComponent<BtnProps> = ({ tag, link }) => {
   return (
-    <Link href={`/${link}`} passHref>
-      <Nav.Link className={styles.nav__btn}>{tag}</Nav.Link>
+     <Link href={`/${link}`} passHref >
+      <Nav.Link className={styles.nav__btn} data-testid="link">{tag}</Nav.Link>
     </Link>
   );
 };

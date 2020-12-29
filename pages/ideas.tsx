@@ -123,6 +123,7 @@ const Ideas = () => {
                       className={styles.ideasSingleColumn}
                       lg="12"
                       key={item}
+                      
                     >
                       <Link href="/ideas/become-a-photographer">
                         <a>

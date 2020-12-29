@@ -11,10 +11,10 @@ type LinkProps = {
 const Links: FC<LinkProps> = ({ href, children }) => {
   const router = useRouter();
   //@ts-ignore
-  let className = children.props.className || '';
   if (router.pathname === href) {
     className = `${className} selected`;
   }
+  
 
   //@ts-ignore
   return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
