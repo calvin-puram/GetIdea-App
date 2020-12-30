@@ -16,13 +16,14 @@ const Menu = () => {
           className={styles.avatar}
         />
         <FaChevronDown
+          data-testid="menuBtn"
           className={styles.avatarIcon}
           onClick={() => setToggleDropdown(!toggleDropdown)}
         />
       </div>
       {/* dropdown */}
       {toggleDropdown && (
-        <div className={styles.dropdownNav}>
+        <div className={styles.dropdownNav} data-testid="dropdown">
           <Link href="/favorite" passHref>
             <Nav.Link className={styles.dropdownNav__itemsLinks}>
               Favorite{' '}
