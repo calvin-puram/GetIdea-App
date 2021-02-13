@@ -10,7 +10,7 @@ type LinkProps = {
 
 const Links: FC<LinkProps> = ({ href, children }) => {
   const router = useRouter();
-  let classname;
+  let className;
   //@ts-ignore
   if (router.pathname === href) {
     className = `${className} selected`;
